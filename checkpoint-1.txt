@@ -1,0 +1,50 @@
+1.
+"A Clockwork Orange" - String
+42 - Integer
+09/02/1945 - Date
+98.7 - Float
+$15.99 - Float
+
+
+2. A database should be used when the data is dynamic. If there is a need to write or delete data regularly or by multiple parties, you should use a database. a JSON file could be used if the data is more static and does not require editing often.
+
+3. SQL is a declarative language, whereas most programming languages are procedural.
+
+4. Data is stored in a database, and is accessed through some form of interface, either by a person or another machine. Data is structured in tables, where individual data sets exist in rows, and those rows are assigned context through columns. Data can be accessed, modified, or returned through the use of queries.
+
+5. A table holds columns and rows that organize data. A row is a single instance of a set of data. A column is a category that types data. A value is the intersection of a row and a column, where the value is a single instance of a type of data.
+
+6. Integer, String, Date
+
+7.
+     - Show the full list of dates and amounts in the payments table.
+     - Show all amounts greater than 500 in the payments table.
+     - Show all payments from Mega Foods in the payments table.
+
+8.  https://www.db-fiddle.com/f/iQAEYktwysXqcLQHv2dwbc/0
+
+SELECT email, signup
+FROM users
+WHERE name = 'DeAndre Data';
+
+| email             | signup                   |
+| ----------------- | ------------------------ |
+| datad@comcast.net | 2008-01-20T00:00:00.000Z |
+
+
+SELECT userid
+FROM users
+WHERE email = 'aleesia.algorithm@uw.edu';
+
+| userid            |
+| ----------------- |
+| 1                 |
+
+
+SELECT *
+FROM users
+WHERE userid = 4;
+
+| userid | name           | email             | signup                   |
+| ------ | -------------- | ----------------- | ------------------------ |
+| 4      | Brandy Boolean | bboolean@nasa.gov | 1999-10-15T00:00:00.000Z |
