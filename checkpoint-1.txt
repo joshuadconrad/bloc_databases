@@ -3,7 +3,7 @@
 42 - Integer
 09/02/1945 - Date
 98.7 - Float
-$15.99 - Float
+$15.99 - Money
 
 
 2. A database should be used when the data is dynamic. If there is a need to write or delete data regularly or by multiple parties, you should use a database. a JSON file could be used if the data is more static and does not require editing often.
@@ -16,10 +16,29 @@ $15.99 - Float
 
 6. Integer, String, Date
 
-7.
-     - Show the full list of dates and amounts in the payments table.
-     - Show all amounts greater than 500 in the payments table.
-     - Show all payments from Mega Foods in the payments table.
+7. https://www.db-fiddle.com/f/5gVGFmB8Aq66SejCFEbfdd/0
+
+Show the full list of dates and amounts in the payments table.
+
+| date                     | amount    |
+| ------------------------ | --------- |
+| 2016-05-01T00:00:00.000Z | 1500.0000 |
+| 2016-05-10T00:00:00.000Z | 37.0000   |
+| 2016-05-15T00:00:00.000Z | 124.9300  |
+| 2016-05-23T00:00:00.000Z | 54.7200   |
+
+Show all amounts greater than 500 in the payments table.
+
+| amount    |
+| --------- |
+| 1500.0000 |
+
+Show all payments from Mega Foods in the payments table.
+
+| date                     | payee      | amount   | memo      |
+| ------------------------ | ---------- | -------- | --------- |
+| 2016-05-15T00:00:00.000Z | Mega Foods | 124.9300 | Groceries |
+
 
 8.  https://www.db-fiddle.com/f/iQAEYktwysXqcLQHv2dwbc/0
 
